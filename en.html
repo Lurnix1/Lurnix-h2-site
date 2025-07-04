@@ -3,31 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lurnix World H₂ – Green Hydrogen</title>
+  <title>LURNIX World H₂ – Green Hydrogen for Africa</title>
+  <link rel="icon" href="logo.png" />
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #f0f4f8;
       color: #1e3a8a;
-      padding: 2rem;
+      padding-bottom: 80px;
     }
-    h1, h2 {
-      color: #1e3a8a;
+    header {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
     }
-    .section {
-      margin-top: 2rem;
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #0f766e;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.75rem;
       margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
     }
     .contact-form button {
       background: #10b981;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
     }
     .whatsapp-float {
       position: fixed;
@@ -37,30 +54,81 @@
       color: white;
       border-radius: 50%;
       padding: 15px;
-      font-size: 20px;
+      font-size: 24px;
       text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .bubble {
+      animation: float 3s infinite ease-in-out;
+      color: #10b981;
+      font-size: 3rem;
+      text-align: center;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Lurnix World H₂</h1>
-  <p>Panafrican leader in green hydrogen – powered by sun and wind.</p>
+  <header>
+    <img src="logo.png" alt="Lurnix Logo" />
+    <h1>LURNIX World H₂</h1>
+    <p>Pan-African green hydrogen for a sustainable future</p>
+  </header>
 
-  <div class="section">
-    <h2>About Lurnix</h2>
-    <p>Lurnix World H₂ is an African industrial conglomerate focused on clean hydrogen through large-scale renewable energy systems.</p>
-  </div>
+  <section>
+    <div class="bubble">H₂</div>
+  </section>
 
-  <div class="section">
-    <h2>Contact us</h2>
+  <section>
+    <h2>Vision 2075</h2>
+    <p>To build the largest Pan-African clean hydrogen energy network with green industrial infrastructures across Africa, aiming for total energy independence by 2075.</p>
+  </section>
+
+  <section>
+    <h2>Partner Countries</h2>
+    <ul>
+      <li>Togo 🇹🇬</li>
+      <li>Ghana 🇬🇭</li>
+      <li>Benin 🇧🇯</li>
+      <li>Burkina Faso 🇧🇫</li>
+      <li>Ivory Coast 🇨🇮</li>
+      <li>Nigeria 🇳🇬</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Our Industrial Projects</h2>
+    <p>We are developing solar plants, onshore and coastal wind farms, next-gen electrolysis units, and logistics hubs to export green hydrogen across Africa and Europe.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
     <form class="contact-form" action="mailto:agbagbelurnix@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="Name" placeholder="Your name" required>
       <input type="email" name="Email" placeholder="Your email" required>
       <textarea name="Message" rows="5" placeholder="Your message" required></textarea>
       <button type="submit">Send</button>
     </form>
-  </div>
+  </section>
 
-  <a href="https://wa.me/233502759353" class="whatsapp-float" title="WhatsApp">&#128172;</a>
+  <a href="https://wa.me/233502759353" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
+
+  <footer>
+    © 2025 LURNIX World H₂ – All rights reserved
+  </footer>
 </body>
 </html>
