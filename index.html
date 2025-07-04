@@ -3,32 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lurnix World H₂ – Hydrogène vert panafricain</title>
-  <meta name="google-site-verification" content="DCA__1BuqkbyYDwNp1-lpu3KeyXnyfLPTQB8oC5bEB8" />
+  <title>LURNIX World H₂ – Hydrogène vert pour l’Afrique</title>
+  <link rel="icon" href="logo.png" />
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #f0f4f8;
       color: #1e3a8a;
-      padding: 2rem;
+      padding-bottom: 80px;
     }
-    h1, h2 {
-      color: #1e3a8a;
+    header {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
     }
-    .section {
-      margin-top: 2rem;
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #0f766e;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.75rem;
       margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
     }
     .contact-form button {
       background: #10b981;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
     }
     .whatsapp-float {
       position: fixed;
@@ -38,21 +54,68 @@
       color: white;
       border-radius: 50%;
       padding: 15px;
-      font-size: 20px;
+      font-size: 24px;
       text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .bubble {
+      animation: float 3s infinite ease-in-out;
+      color: #10b981;
+      font-size: 3rem;
+      text-align: center;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur Lurnix World H₂</h1>
-  <p>Hydrogène vert panafricain – site hébergé avec succès !</p>
+  <header>
+    <img src="logo.png" alt="Lurnix Logo" />
+    <h1>LURNIX World H₂</h1>
+    <p>Hydrogène vert panafricain pour un avenir durable</p>
+  </header>
 
-  <div class="section">
-    <h2>À propos de Lurnix</h2>
-    <p>Lurnix World H₂ est un conglomérat industriel dédié à la production d'hydrogène vert en Afrique grâce à l’énergie solaire et éolienne.</p>
-  </div>
+  <section>
+    <div class="bubble">H₂</div>
+  </section>
 
-  <div class="section">
+  <section>
+    <h2>Vision 2075</h2>
+    <p>Construire le plus grand réseau panafricain d'énergie hydrogène propre, avec des infrastructures industrielles vertes et autonomes dans toute l’Afrique, pour une indépendance énergétique totale d’ici 2075.</p>
+  </section>
+
+  <section>
+    <h2>Nos pays partenaires</h2>
+    <ul>
+      <li>Togo 🇹🇬</li>
+      <li>Ghana 🇬🇭</li>
+      <li>Bénin 🇧🇯</li>
+      <li>Burkina Faso 🇧🇫</li>
+      <li>Côte d’Ivoire 🇨🇮</li>
+      <li>Nigéria 🇳🇬</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nos projets industriels</h2>
+    <p>Nous développons des centrales solaires, des éoliennes terrestres et côtières, des unités d’électrolyse de dernière génération, et des hubs logistiques pour exporter l’hydrogène vert vers l’Afrique et l’Europe.</p>
+  </section>
+
+  <section>
     <h2>Contactez-nous</h2>
     <form class="contact-form" action="mailto:agbagbelurnix@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="Nom" placeholder="Votre nom" required>
@@ -60,8 +123,12 @@
       <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
       <button type="submit">Envoyer</button>
     </form>
-  </div>
+  </section>
 
-  <a href="https://wa.me/233502759353" class="whatsapp-float" title="WhatsApp">&#128172;</a>
+  <a href="https://wa.me/233502759353" class="whatsapp-float" title="Discuter via WhatsApp">💬</a>
+
+  <footer>
+    © 2025 LURNIX World H₂ – Tous droits réservés
+  </footer>
 </body>
 </html>
